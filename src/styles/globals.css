@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('/fonts/inter-var-latin.woff2') format('woff2');
+  } */
+  @font-face {
+    font-family: 'Bodoni Moda';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../../public/fonts/Bodoni_Moda/BodoniModa-VariableFont_opsz\,wght.ttf')
+      format('truetype');
+  }
+  @font-face {
+    font-family: 'Khula';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('../../public/fonts/Khula/Khula-Regular.ttf') format('truetype');
+  }
+
+  body {
+    font-family: 'Khula', sans-serif;
+  }
+  h1 {
+    font-family: 'Bodoni Moda', serif;
+  }
+}
