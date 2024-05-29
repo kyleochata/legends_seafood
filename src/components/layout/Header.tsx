@@ -7,7 +7,7 @@ import { useTheme } from 'next-themes'
 const Header = () => {
   const { theme, setTheme } = useTheme()
   return (
-    <header className="flex justify-center items-center w-full">
+    <header className="flex justify-center items-center w-full sticky">
       <Container>
         <div className="flex justify-between items-center py-4 w-full">
           <Image
@@ -23,11 +23,7 @@ const Header = () => {
             <Button
               onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
               borderRadius="0.5rem"
-              className={
-                theme === 'dark'
-                  ? 'bg-black text-white border-slate-800'
-                  : 'bg-white text-black border-neutral-200'
-              }
+              className="dark:bg-black dark:text-white dark:border-slate-800 bg-white text-black border-neutral-200"
             >
               {theme === 'dark' ? <MoonIcon /> : <SunIcon />}
             </Button>

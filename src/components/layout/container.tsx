@@ -7,7 +7,6 @@ const maxWContainer = ({ children }: any) => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        border: '1px solid red',
       }}
     >
       {children}
