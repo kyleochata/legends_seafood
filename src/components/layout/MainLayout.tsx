@@ -11,7 +11,16 @@ const MainLayout = ({ children }: { children: ReactNode }) => {
       disableTransitionOnChange={true}
     >
       <Header />
-      {children}
+      <main
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {children}
+      </main>
     </ThemeProvider>
   )
 }

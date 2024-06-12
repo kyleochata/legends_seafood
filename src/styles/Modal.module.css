@@ -1,0 +1,21 @@
+.modal_backdrop {
+  background-color: aqua;
+  position: fixed;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 100;
+  animation: modal_open 0.3s forwards;
+}
+
+@keyframes modal_open {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    top: 54px;
+    opacity: 1;
+  }
+}

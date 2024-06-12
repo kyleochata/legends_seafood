@@ -18,6 +18,13 @@ const config: Config = {
       body: ['Khula', 'sans-serif'],
     },
     extend: {
+      colors: {
+        jade: {
+          light: '#0f3623',
+          DEFAULT: '#013e2f',
+          dark: '#0d3221',
+        },
+      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
