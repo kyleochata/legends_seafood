@@ -25,7 +25,9 @@
     font-display: swap;
     src: url('../../public/fonts/Khula/Khula-Regular.ttf') format('truetype');
   }
-
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     font-family: 'Khula', sans-serif;
     background-color: whitesmoke;

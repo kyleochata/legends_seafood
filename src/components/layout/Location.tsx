@@ -7,9 +7,9 @@ import {
 } from '@radix-ui/react-icons'
 const Location = () => {
   return (
-    <section className={style.location} id="location">
+    <section className={style.location} id="discover">
       <div className={style.lo_title_container}>
-        <h4 className={style.lo_h_sub_title}>Discover</h4>
+        <h4 className={style.lo_h_sub_title}>DISCOVER</h4>
         <h2 className={style.lo_title}>
           Honolulu's Chinese
           <br /> Cultural Plaza
@@ -18,16 +18,17 @@ const Location = () => {
       <div className={style.lo_content}>
         <div className={style.lo_c_t_container}>
           <HomeIcon className={style.lo_pin} />
-          <h3 className={style.lo_c_sub_title}>Discover a piece of China</h3>
+          <h3 className={style.lo_c_sub_title}>Experience Our Culture</h3>
         </div>
 
         <p className={style.lo_para}>
           {' '}
           Nestled in the charm of Honolulu's Chinese Cultural Plaza, we provide
           an authentic taste of China. Surrounded by vibrant cultural heritage,
-          our dining spot offers a dining retreat where tradition and cuisine
-          blend seamlessly. We generously welcome you to let us host your next
-          dining experience or offer pick-up to enjoy elsewhere.
+          our dining spot offers a dining experience where tradition, culture
+          and local hospitality blend seamlessly. We generously welcome you to
+          let us host your next dining experience or offer pick-up to enjoy
+          elsewhere.
         </p>
         <div className={style.lo_c_t_container}>
           <DrawingPinFilledIcon className={style.lo_pin} />
@@ -48,6 +49,10 @@ const Location = () => {
           <li>Lunch: 11:00am - 3:00pm </li>
           <li>Dinner: 5:00pm - 10:00pm</li>
         </ul>
+        <p className={style.lo_fp}>
+          *Operating hours may change at our discretion. Final seating is 30
+          minutes before closing.
+        </p>
       </div>
     </section>
   )

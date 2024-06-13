@@ -88,7 +88,7 @@ const Header = () => {
   const handleHamburgerClick = () => {
     hamburgerMenuLogic()
     if (isOpen) {
-      closeModal() // Close modal when hamburger menu is clicked
+      closeModal()
     }
   }
 
@@ -116,10 +116,10 @@ const Header = () => {
               Banquets & Private Dining
             </a>
             <a
-              href="#contact"
+              href="#discover"
               className="text-sm dark:text-white hidden sm:block"
             >
-              Location
+              Discover
             </a>
           </nav>
           <div className="flex flex-nowrap justify-between gap-5 items-center">
@@ -130,6 +130,7 @@ const Header = () => {
             >
               {theme === 'dark' ? <MoonIcon /> : <SunIcon />}
             </Button>
+            {/* CHORE: Change the modal to work. Current issue: It will not stop propagation when modal is open and you click on the burger icon again. Will close then immediately open */}
             <button
               className="w-1/2 h-full Burger-menu"
               onClick={handleHamburgerClick}

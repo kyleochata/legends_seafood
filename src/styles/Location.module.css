@@ -10,16 +10,15 @@
 .lo_title {
   font-size: clamp(2rem, 2vw, 3rem);
   font-weight: 700;
+  letter-spacing: 2px;
 }
 .lo_h_sub_title {
   /* font-size: 1.25rem; */
   font-family: 'Khula', sans-serif;
+  letter-spacing: 5px;
+  color: gray;
 }
 
-/* .lo_title_container {
-  width: 50%;
-  margin-right: rem;
-} */
 .lo_content {
   width: 60%;
   display: flex;
@@ -59,5 +58,9 @@
   cursor: pointer;
 }
 .lo_pin {
+  color: gray;
+}
+.lo_fp {
+  font-size: 0.5rem;
   color: gray;
 }
